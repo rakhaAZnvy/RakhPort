@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CV — Rakha Adinata Zavier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/player.css">
+<link rel="stylesheet" href="css/themes.css">
+</head>
+<body>
+<main class="screen player theme-cv" id="playerView" data-track="cv">
+  <!-- Kotak cover: kosong/abu-abu dulu; saat play ia di-zoom dan isi #panel muncul -->
+  <div id="artSlot">
+    <div class="art" id="art">
+      <a id="backBtn" href="index.html">← Album</a>
+      <section class="panel" id="panel">
+        <h2>Curriculum Vitae</h2>
+        <p>Ringkasan latar belakang, pengalaman, dan kemampuan teknis — mulai dari coursework, riset kelompok, hingga pengembangan ML/AI langsung.</p>
+        <!-- Taruh file CV kamu di folder assets/ dengan nama ini (atau ganti href-nya) -->
+        <a class="cta" href="https://drive.google.com/drive/folders/1m6O49t5QGlxFT1DKQqYplpfCZXQrNjld?usp=sharing" download>Check my CV (PDF)</a>
+      </section>
+    </div>
+  </div>
+
+  <div class="meta">
+    <span class="kicker">About me (CV)*</span>
+    <h1 class="title">wonderful Life^</h1>
+    <p class="byline_cv">Rakha Adinata Zavier</p>
+  </div>
+  <div class="scrub" id="scrub" role="slider" aria-label="Progres" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+    <div class="track"><i id="fill"></i></div><b id="knob"></b>
+  </div>
+  <div class="times"><span id="curTime">0:00</span><span id="durTime">0:00</span></div>
+  <div class="transport">
+    <button style="visibility: hidden;" aria-hidden="true"><svg viewBox="0 0 24 24"></svg></button>
+
+    <button id="prev" aria-label="Sebelumnya"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+    <button id="playBtn" class="play" aria-label="Putar"><svg id="playIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l12-7z"/></svg></button>
+    <button id="next" aria-label="Berikutnya"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+  
+    <button id="muteBtn" aria-label="Mute">
+      <svg id="muteIcon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+      </svg>
+    </button>
+  </div>
+
+  <p class="disclaimer">
+    Music is not mine! but its free license music
+  </p>
+
+</main>
+
+<script src="js/tracks.js"></script>
+<script src="js/player.js"></script>
+</body>
+</html>

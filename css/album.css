@@ -1,0 +1,15 @@
+/* album.css — halaman utama (index.html): album "Never Ending Story" + daftar track */
+.album{ display:block; background:#48484b; color:#fff; }
+.albumHead{ display:flex; gap:calc(var(--u)*2); align-items:center; margin-bottom:calc(var(--u)*2.4); }
+.albumThumb{ width:calc(var(--u)*8); height:calc(var(--u)*8); border-radius:calc(var(--u)*1.4); flex:none; background:url("../assets/FotoAlbum.jpeg") center/cover;}
+.albumKicker{ font-size:max(12px,calc(var(--u)*1.4)); font-weight:600; margin:0; }
+.albumTitle{ font-size:max(24px,calc(var(--u)*4.2)); font-weight:600; margin:0; line-height:1.1; }
+.albumArtist{ display:flex; align-items:center; gap:.5em; font-size:max(12px,calc(var(--u)*1.2)); margin-top:.4em; }
+.albumArtist i{ width:1.3em; height:1.3em; border-radius:50%; background:#d9d9d9; display:block; }
+
+.albumList{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:calc(var(--u)*1.1); }
+.albumList a{ display:flex; align-items:center; gap:calc(var(--u)*1.6); background:#d9d9d9; color:#17161c; text-decoration:none; border-radius:calc(var(--u)*1.4); padding:calc(var(--u)*1.4) calc(var(--u)*1.8); }
+.albumList a:hover,.albumList a:focus-visible{ background:#e8e8e8; outline:none; }
+.swatch{ display:block; width:calc(var(--u)*8); height:calc(var(--u)*8); border-radius:calc(var(--u)*.9); flex:none; border:1px solid rgba(0,0,0,.08); }
+.t1{ display:block; font-size:max(25px,calc(var(--u)*1.1)); color:#666; }
+.t2{ display:block; font-size:max(20px,calc(var(--u)*1.7)); font-weight:500; }

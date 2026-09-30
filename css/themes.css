@@ -1,0 +1,43 @@
+/* themes.css — latar penuh tiap halaman. Dipakai juga oleh kotak warna kecil di daftar album.
+   Ingin pakai foto? Ganti `background` dengan url("../assets/nama-foto.jpg") center/cover.
+   Ingin gambar cover di kotak abu-abu? Isi --cover, mis. --cover:url("../assets/cv-cover.jpg"); */
+.theme-cv{ background:url("../assets/Desktop\ -\ 1.png") center/cover; --cover:none; }
+.theme-projects{ background:url("../assets/Desktop\ -\ 2.png") center/cover; --cover:none; }
+.theme-contact{ background:url("../assets/Desktop\ -\ 3.png") center/cover; --cover:none; }
+.theme-experience{ background:url("../assets/Desktop\ -\ 7.png") center/cover; --cover:none; }
+
+/* latar berwarna -> teks & ksontrol putih */
+.theme-projects, .theme-experience{ --ink:#fff; --soft:rgba(255,255,255,.75); --line:rgba(255,255,255,.35); }
+
+.theme-cv .art.zoomed {
+  /* Warna lebih kentara: ungu soft, pink, biru langit, dan hijau mint */
+  background: linear-gradient(-45deg, #3d3d3d, #6a6a6a, #a3a3a3, #ffffff);
+  background-size: 250% 250%; /* Diperkecil agar gradasi cepat masuk ke frame layar */
+  animation: gradientGerak 4s ease infinite; /* Durasi 4 detik biar cepat kelihatan geraknya */
+  color: #1a1a1a;
+}
+
+@keyframes gradientGerak {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.theme-projects .art.zoomed {
+  /* Kombinasi warna neon: ungu gelap, magenta, pink neon, dan sedikit oranye kemerahan */
+  background: linear-gradient(-45deg, #3a0ca3, #f72585, #7209b7, #ff1b6b);
+  background-size: 300% 300%;
+  
+  /* Animasi dibuat 6 detik supaya pergerakan neon-nya asik dan kerasa */
+  animation: neonVibes 6s ease infinite;
+  
+  /* Teks diubah ke putih atau warna terang biar kontras dengan neon */
+  color: #ffffff; 
+}
+
+/* Keyframes untuk menggerakkan gradasi neon-nya */
+@keyframes neonVibes {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
